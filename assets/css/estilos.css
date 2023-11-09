@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+:root {
+  --lightred: #ff4782;
+}
+
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'PT Serif', serif;
+  background-color: #F0F8F0;
+}
+
+/* Colores */
+.lightred{
+  color: var(--lightred);
 }
 
 /* Logo */
@@ -11,36 +23,16 @@ body {
 
 /* Hero Section */
 
-#Hero-Section {
-  background-image: url("../img/bg-programmer.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
+.hero__title{
+  font-size: 5rem;
 }
 
-/* Mis trabajos */
-
-#Mis-trabajos .image-top {
-  height: 250px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.navbar-nav .nav-link:hover {
+  color:var(--lightred); /* Cambia 'red' por el código de color específico que desees */
 }
 
-/* Contacto */
+/* Form */
 
-#Contacto form label {
-  font-weight: 700;
-  color: #373a3c;
-}
-
-@media (max-width: 768px) {
-  #Contacto form label {
-    font-weight: 400;
-  }
-
-  .navbar-brand{
-    width: 100px;
-  }
-
+.bg__form{
+  background-color: #dbebdc;
 }

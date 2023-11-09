@@ -1,210 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>Sebastián Lagos - Developer Fullstack Javascript</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/estilos.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <span class="logo">Sebastián Lagos</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Acerca-de-mi">Acerca de mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Mis-trabajos">Trabajos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contacto">Contacto</a>
-                    </li>
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <div class="container" style="max-width: 1100px">
+        <a class="navbar-brand" href="#">
+          <span class="logo">{SEBASCODES}</span>
+        </a>
 
-                </ul>
-
-            </div>
-        </div>
+        <ul class="navbar-nav mb-2 mb-lg-0 fs-5">
+          <li class="nav-item" style="margin-right: 20px">
+            <a class="nav-link" href="#sobremi">Sobre Mi</a>
+          </li>
+          <li class="nav-item" style="margin-right: 20px">
+            <a class="nav-link" href="#micv">Mi CV</a>
+          </li>
+          <li class="nav-item" style="margin-right: 20px">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <header id="Hero-Section" class="text-light text-end py-5 mt-5">
-        <div class="container">
-            <div class="ms-auto col-12 col-md-7 ">
-                <h1 class="display-1 fw-bold my-5">
-                    Fullstack <br> Developer
-                </h1>
-                <p class="my-5">
-                    Hola, Soy Sebastián Lagos y me dedido al apacionante mundo del desarrollo web, principalmente en el area del Frontend.
-                    Me gusta mucho el diseño y la experiencia de usuario, por lo que siempre busco que mis proyectos sean atractivos y fáciles de usar.
-                    Mi stack favorito de trabajo es Javascript, React, Node y Firebase. También estoy aprendiendo Vue y Angular.
-                <div class="mb-5 pb-5">
-                    <button class="btn btn-lg btn-outline-success text-light me-4">Trabajos</button>
-                    <button class="btn btn-lg btn-success text-light">Contacto</button>
-                </div>
-            </div>
+    <header class="py-5">
+      <div class="container" style="max-width: 1100px">
+        <div class="row">
+          <div
+            class="col-12 col-md-8 d-flex flex-column justify-content-center"
+          >
+            <h1 class="hero__title">
+              Hola, Soy
+              <span class="lightred">Sebas</span><br />
+            </h1>
+            <span class="fs-3 text-black">Fullstack Javascript Developer</span>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <img
+              class="rounded-circle w-100"
+              src="./assets/img/Sebalagos.jpeg"
+              alt="Sebastian Lagos"
+            />
+          </div>
         </div>
+      </div>
     </header>
-
-
-    <section id="Acerca-de-mi" class="container text-center my-5">
-
-
-        <h2 class="display-3 fw-bold my-4">Acerca de mi</h2>
-
-        <p class="my-4">
-            Hay muchas cosas que me gusta hacer, pero principalmente me dedico a la música y a la programación, también 
-            dedico tiempo a la lectura y a ver muchas series coreanas.
-        </p>
-
-
+    <main class="container" style="max-width: 1100px">
+      <section id="sobremi" class="container my-5">
         <div class="row">
-            <div class="col-12 col-md-4">
-                <i class="fab fa-dev fa-3x my-3"></i>
-                <h3 class="my-3 fw-bold">Desarrollo Web</h3>
-                <p class="my-3">
-                    Desarrollo sitios web en HTML/CSS/JS/REACT, portafolios, landing pages, Ecommerce y proyectos afines con algun 
-                    CMS como WordPress.
-                </p>
-            </div>
-            <div class="col-12 col-md-4">
-                <i class="fas fa-cart-plus fa-3x my-3"></i>
-                <h3 class="my-3 fw-bold">Ecommerce</h3>
-                <p class="my-3">
-                    Me dedico al desarrollo frontend de tiendas virtuales utilizando diferentes tecnologias,
-                    como React, Node, Sql y Express.
-                </p>
-            </div>
-            <div class="col-12 col-md-4">
-                <i class="fas fa-code fa-3x my-3"></i>
-                <h3 class="my-3 fw-bold">Shopify Developer</h3>
-                <p class="my-3">
-                    Creo tiendas Ecommerce en Shopify y realizo modificaciones de maquetado en su lenguaje liquid.
-                    también programación de eventos dentro de la tienda con Javascript.
-                </p>
-            </div>
+          <col-4>
+            <h2 class="fs-1 fw-bold my-4">Sobre Mi</h2>
+
+            <p class="my-4 fs-2 text-muted">
+              Mi nombre es Sebastián Lagos y soy un profesional dedicado al
+              fascinante mundo del desarrollo web, especializándome en Frontend.
+              Poseo una profunda apreciación por el diseño y la experiencia de
+              usuario, lo cual me motiva a crear proyectos visualmente
+              atractivos y con una interfaz intuitiva. Tengo experiencia
+              trabajando con tecnologías como JavaScript, React, Node.js y
+              Firebase. Actualmente, me encuentro expandiendo mis habilidades en
+              Vue.js y Angular.
+            </p>
+          </col-4>
         </div>
-    </section>
+      </section>
 
-
-    <section id="Mis-trabajos" class="my-5 p-5 bg-dark">
-
-        <h2 class="display-4 fw-bold text-center text-light mb-3">Mis trabajos</h2>
-
+      <section id="micv" class="container py-5">
+        <h2 class="fs-1 fw-bold my-4">Experiencia Laboral</h2>
         <div class="row">
-            <div class="col-12 col-sm-4 py-2">
-                <div class="card">
-                    <div class="image-top" style="background-image: url(assets/img/card-1.webp)"></div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Landing Page</h5>
-                        <p class="card-text">
-                            Creación de landing page para el rubro inmobiliario, con formulario de contacto y sección de
-                            preguntas frecuentes.
-                        </p>
-                        <button type="button" class="btn btn-outline-success">
-                            Ver más
-                        </button>
-                    </div>
-                </div>
+          <div class="col-12 col-md-6 mt-4">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <!-- Job Title -->
+                <h5 class="card-title lightred">Developer Designer UX/UI</h5>
+                <!-- Company and Time -->
+                <h6 class="card-subtitle mb-2 text-muted">
+                  DataproChile · Jornada completa
+                </h6>
+                <p class="card-text">
+                  jun. 2021 - actualidad · 2 años 6 mesesjun. 2021 - actualidad
+                  · 2 años 6 meses Chile
+                </p>
+                <!-- Description -->
+                <p class="card-text">
+                  Supervisor de Desarrollo de E-commerce en las plataformas
+                  Shopify y Woocommerce, centrado en la mejora constante.
+                  Especializado en la implementación de soluciones avanzadas
+                  mediante Javascript y en la creación de diseños sofisticados a
+                  través de HTML y CSS. Poseo un historial sólido en la gestión
+                  de datos para la creación de Wireframes y mockups que permiten
+                  una planificación efectiva. Experto en integraciones que
+                  permiten un control dinámico del DOM utilizando Javascript,
+                  además de destacarme en el diseño web adaptable para
+                  garantizar una experiencia óptima en cualquier dispositivo.
+                </p>
+                <!-- Skills -->
+                <p class="card-text">
+                  <strong>Aptitudes:</strong> UX/UI · Wireframing · Figma ·
+                  React.js · JavaScript
+                </p>
+              </div>
             </div>
-            <div class="col-12 col-sm-4 py-2">
-                <div class="card">
-                    <div class="image-top" style="background-image: url(assets/img/card-2.webp)"></div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Carrito de compras con React</h5>
-                        <p class="card-text">
-                            Carrito de compras implementado con React y Sql para guardar los productos.
-                            Se aprovecho el uso de estados y propiedades de Reactjs.
-                        </p>
-                        <button type="button" class="btn btn-outline-success">
-                            Ver más
-                        </button>
-                    </div>
-                </div>
+          </div>
+          <div class="col-12 col-md-6 mt-4">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <!-- Job Title -->
+                <h5 class="card-title lightred">
+                  Developer Designer UX/UI Freelance
+                </h5>
+                <!-- Company and Time -->
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Eserp - Profesional independiente
+                </h6>
+                <p class="card-text">
+                  mar. 2019 - ene. 2023 · 3 años 11 meses <br />
+                  Santiago, Región Metropolitana de Santiago, Chile
+                </p>
+                <!-- Description -->
+                <p class="card-text">
+                  Desarrollo Front-End en React para CRM de E-commerce
+                  Kioscloud, uso de tecnologías como GraphQL y Hasura Backend.
+                </p>
+                <!-- Skills -->
+                <p class="card-text">
+                  <strong>Aptitudes:</strong> Wireframing · React.js
+                </p>
+              </div>
             </div>
-            <div class="col-12 col-sm-4 py-2">
-                <div class="card">
-                    <div class="image-top" style="background-image: url(assets/img/card-3.webp)"></div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Tienda Ecommerce</h5>
-                        <p class="card-text">
-                            Ecommerce realizado en Shopify para cliente de tienda de ropa.
-                            Se realizó el diseño y maquetado de la tienda, así como la programación.
-                        </p>
-                        <button type="button" class="btn btn-outline-success">
-                            Ver más
-                        </button>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
 
-    </section>
-
-
-
-    <section id="Contacto" class="container my-5">
-
-        <h2 class="display-4 fw-bold text-center my-4">Contáctame</h2>
-
-        <p class="text-center my-4 d-none d-md-block">Si tienes algún proyecto en mente o necesitas de un desarrollador comprometido y pueda ayudarte en tus ideas más locas, no dudes en contactarme.</p>
-
-        <form>
-
-
-            <div class="form-group mb-4">
-                <label class="mb-2">Nombre</label>
-                <input class="form-control" placeholder="Nombre">
+        <div class="row">
+          <div class="col-12 col-md-6 mt-4">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <!-- Job Title -->
+                <h5 class="card-title lightred">Diseñador Web UX/UI</h5>
+                <!-- Company and Time -->
+                <h6 class="card-subtitle mb-2 text-muted">
+                  VIGA DIGITAL · Jornada completa
+                </h6>
+                <p class="card-text">
+                  feb. 2021 - may. 2021 · 4 meses feb. 2021 - may. 2021 · 4
+                  meses Santiago, Región Metropolitana de Santiago, Chile
+                </p>
+                <!-- Description -->
+                <p class="card-text">
+                  Diseño de Wireframes, Look&feel prototipado web y móvil Ayuda
+                  en la implementación de emailing masivo en SALESFORCE y
+                  difusión de campañas mensuales. Diseño en Photoshop y
+                  implementación en Landing Pages para campañas de Paris y LG.
+                </p>
+                <!-- Skills -->
+                <p class="card-text">
+                  <strong>Aptitudes:</strong> Wireframing · Figma · Diseño de
+                  interacción · Diseño web adaptable
+                </p>
+              </div>
             </div>
+          </div>
 
-            <div class="form-group mb-4">
-                <label class="mb-2">Correo electrónico</label>
-                <input class="form-control" placeholder="Correo electrónico" />
+          <div class="col-12 col-md-6 mt-4">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <!-- Job Title -->
+                <h5 class="card-title lightred">
+                  Desarrollo WordPress Freelancer
+                </h5>
+                <!-- Company and Time -->
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Profesional independiente
+                </h6>
+                <p class="card-text">
+                  ene. 2015 - ene. 2018 · 7 años 1 mes ene. 2015 - ene. 2018 · 3
+                  años 1 mes Santiago, Región Metropolitana de Santiago, Chile
+                </p>
+                <!-- Description -->
+                <p class="card-text">
+                  He trabajado con las principales plataformas, incluyendo
+                  WooCommerce, Shopify y Jumseller, lo que me permite adaptarme
+                  a sus necesidades específicas y garantizar que su sitio web no
+                  solo sea funcional, sino también estéticamente atractivo y
+                  orientado a la conversión.
+                </p>
+                <!-- Skills -->
+                <p class="card-text">
+                  <strong>Aptitudes:</strong> WordPress · Wireframing · Figma ·
+                  JavaScript
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-
-            <div class="form-group">
-                <label class="mb-2">Mensaje</label>
-                <textarea class="form-control" placeholder="Escribe aquí tu mensaje"></textarea>
+      <section id="skills">
+        <div class="container py-5">
+          <div class="row text-center mb-4">
+            <div class="col">
+              <h2>Skills</h2>
             </div>
-
-            <div class="my-3 text-end">
-                <button class="btn btn-success text-light">Enviar</button>
+          </div>
+          <div class="row">
+            <!-- MongoDB -->
+            <div class="col-sm-6 col-md-3 mb-3">
+              <div class="text-center">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/firebase.svg"
+                  alt="MongoDB"
+                  class="img-fluid"
+                  style="height: 100px; fill: #47a248"
+                />
+                <h4>Firebase</h4>
+              </div>
             </div>
+            <!-- Express -->
+            <div class="col-sm-6 col-md-3 mb-3">
+              <div class="text-center">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/express.svg"
+                  alt="Express.js"
+                  class="img-fluid"
+                  style="height: 100px; fill: #000000"
+                />
+                <h4>Express.js</h4>
+              </div>
+            </div>
+            <!-- React -->
+            <div class="col-sm-6 col-md-3 mb-3">
+              <div class="text-center">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/react.svg"
+                  alt="React"
+                  class="img-fluid"
+                  style="height: 100px; fill: #61dafb"
+                />
+                <h4>React</h4>
+              </div>
+            </div>
+            <!-- Node.js -->
+            <div class="col-sm-6 col-md-3 mb-3">
+              <div class="text-center">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/javascript.svg"
+                  alt="Node.js"
+                  class="img-fluid"
+                  style="height: 100px; fill: #339933"
+                />
+                <h4>Javascript</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-
-
-        </form>
-
-    </section>
-
-
+    <section class="bg__form text-black my-5 p-5 rounded">
+        <div class="container">
+          <h2 class="text-center pb-5">Cuentame tu proyecto</h2>
+          <form action="https://formsubmit.co/sebaprogramer@gmail.com" method="POST">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Tu nombre" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Tu apellido" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Tu email" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Tu teléfono">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </section>
+      
+    </main>
 
     <footer class="bg-dark text-center text-light p-4">
-        <p class="mb-0">Sebastián Lagos 2023. Todos los derechos reservados.</p>
+      <p class="mb-0">Sebastián Lagos 2023. Todos los derechos reservados.</p>
+      <div>
+        <a href="https://twitter.com/develop_seba" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/sebacode83/">GitHub</a>
+        <a href="">Instagram</a>
+      </div>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
