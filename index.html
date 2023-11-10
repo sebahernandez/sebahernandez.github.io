@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/devicon/devicon.min.css"
+    />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -29,52 +35,69 @@
 
   <body>
     <nav class="navbar navbar-expand-md">
-      <div class="container" style="max-width: 1100px">
+      <div class="container">
+        <!-- Logo visible en todos los tamaños -->
         <a class="navbar-brand" href="#">
           <span class="logo">{SEBASCODES}</span>
         </a>
-
-        <ul class="navbar-nav mb-2 mb-lg-0 fs-5">
-          <li class="nav-item" style="margin-right: 20px">
-            <a class="nav-link" href="#sobremi">Sobre Mi</a>
-          </li>
-          <li class="nav-item" style="margin-right: 20px">
-            <a class="nav-link" href="#micv">Mi CV</a>
-          </li>
-          <li class="nav-item" style="margin-right: 20px">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-        </ul>
+        <!-- Botón de toggler para dispositivos móviles -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Contenido del menú que se colapsará en móviles -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+            <li class="nav-item" style="margin-right: 20px">
+              <a class="nav-link" href="#sobremi">Sobre Mi</a>
+            </li>
+            <li class="nav-item" style="margin-right: 20px">
+              <a class="nav-link" href="#micv">Mi CV</a>
+            </li>
+            <li class="nav-item" style="margin-right: 20px">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <header class="py-5">
-      <div class="container" style="max-width: 1100px">
-        <div class="row">
-          <div
-            class="col-12 col-md-8 d-flex flex-column justify-content-center"
-          >
-            <h1 class="hero__title">
-              Hola, Soy
-              <span class="lightred">Sebas</span><br />
-            </h1>
-            <span class="fs-3 text-black">Fullstack Javascript Developer</span>
-          </div>
+    <main class="container">
+      <header class="py-md-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-md-8 d-flex flex-column justify-content-center"
+            >
+              <h1 class="hero__title">
+                Hola, Soy
+                <span class="lightred">Sebas :)</span><br />
+              </h1>
+              <span class="fs-3 text-black"
+                >Fullstack Javascript Developer</span
+              >
+            </div>
 
-          <div class="col-12 col-md-4">
-            <img
-              class="rounded-circle w-100"
-              src="./assets/img/Sebalagos.jpeg"
-              alt="Sebastian Lagos"
-            />
+            <div class="col-12 col-md-4">
+              <img
+                class="rounded-circle w-100 mt-5"
+                src="./assets/img/Sebalagos.jpeg"
+                alt="Sebastian Lagos"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main class="container" style="max-width: 1100px">
+      </header>
       <section id="sobremi" class="container my-5">
         <div class="row">
           <col-4>
@@ -91,6 +114,41 @@
               Vue.js y Angular.
             </p>
           </col-4>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="fs-1 fw-bold my-4">Formación academica</h2>
+          <!-- First box for Duoc UC -->
+          <div class="row align-items-center mb-3">
+            <div class="col-auto">
+              <img
+                src="https://seeklogo.com/images/D/duoc-uc-logo-F1437952BE-seeklogo.com.png"
+                alt="Logo Duoc UC"
+                style="width: 35px; height: 35px"
+              />
+            </div>
+            <div class="col">
+              <h5>Titulado en Desarrollo y Diseño Web - Duoc UC</h5>
+              <p>2019 - 2021.</p>
+            </div>
+          </div>
+
+          <!-- Second box for Desafio Latam Bootcamp -->
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <img
+                src="https://broota.s3.amazonaws.com/solicitudes/590/logo/logo_RzsgV2q7VkgSrN9Kw1b5u538XzUHum_200_200.png"
+                alt="Logo Desafio Latam Bootcamp"
+                style="width: 35px; height: 35px"
+              />
+            </div>
+            <div class="col">
+              <h5>Fullstack Developer Javascript - Desafio Latam</h5>
+              <p>2023 - Cursando.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -232,105 +290,149 @@
         <div class="container py-5">
           <div class="row text-center mb-4">
             <div class="col">
-              <h2>Skills</h2>
+              <h2 class="fs-1 fw-bold my-4">Skills</h2>
             </div>
           </div>
           <div class="row">
-            <!-- MongoDB -->
+            <!-- Firebase -->
             <div class="col-sm-6 col-md-3 mb-3">
               <div class="text-center">
-                <img
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/firebase.svg"
-                  alt="MongoDB"
-                  class="img-fluid"
-                  style="height: 100px; fill: #47a248"
-                />
+                <i
+                  class="devicon-firebase-plain colored"
+                  style="font-size: 100px"
+                ></i>
                 <h4>Firebase</h4>
               </div>
             </div>
             <!-- Express -->
             <div class="col-sm-6 col-md-3 mb-3">
               <div class="text-center">
-                <img
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/express.svg"
-                  alt="Express.js"
-                  class="img-fluid"
-                  style="height: 100px; fill: #000000"
-                />
+                <i
+                  class="devicon-express-original colored"
+                  style="font-size: 100px"
+                ></i>
                 <h4>Express.js</h4>
               </div>
             </div>
             <!-- React -->
             <div class="col-sm-6 col-md-3 mb-3">
               <div class="text-center">
-                <img
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/react.svg"
-                  alt="React"
-                  class="img-fluid"
-                  style="height: 100px; fill: #61dafb"
-                />
+                <i
+                  class="devicon-react-original colored"
+                  style="font-size: 100px"
+                ></i>
                 <h4>React</h4>
               </div>
             </div>
             <!-- Node.js -->
             <div class="col-sm-6 col-md-3 mb-3">
               <div class="text-center">
-                <img
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/javascript.svg"
-                  alt="Node.js"
-                  class="img-fluid"
-                  style="height: 100px; fill: #339933"
-                />
-                <h4>Javascript</h4>
+                <i
+                  class="devicon-nodejs-plain colored"
+                  style="font-size: 100px"
+                ></i>
+                <h4>Node.js</h4>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-    <section class="bg__form text-black my-5 p-5 rounded">
+      <section class="bg__form text-black rounded">
         <div class="container">
-          <h2 class="text-center pb-5">Cuentame tu proyecto</h2>
-          <form action="https://formsubmit.co/sebaprogramer@gmail.com" method="POST">
+          <h2 class="text-center py-3">Cuentame tu proyecto</h2>
+          <p class="text-center fs-5">
+            Este no es un simple contacto, es la puerta a una relación sincera y
+            comprometida.
+          </p>
+          <form
+            action="https://formsubmit.co/sebaprogramer@gmail.com"
+            method="POST"
+          >
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="firstName" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="firstName" placeholder="Tu nombre" required>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="Tu nombre"
+                  required
+                />
               </div>
               <div class="col-md-6 mb-3">
                 <label for="lastName" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Tu apellido" required>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Tu apellido"
+                  required
+                />
               </div>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Tu email" required>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Tu email"
+                required
+              />
             </div>
             <div class="mb-3">
               <label for="phone" class="form-label">Teléfono</label>
-              <input type="tel" class="form-control" id="phone" placeholder="Tu teléfono">
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Tu teléfono"
+              />
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="Tu mensaje" required></textarea>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="3"
+                placeholder="Tu mensaje"
+                required
+              ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-success">
+              Enviar Consulta
+            </button>
           </form>
         </div>
       </section>
-
-      <section>
-        <p class="francisco">Hola Sebastian</p>
-      </section>
-      
     </main>
 
     <footer class="bg-dark text-center text-light p-4">
-      <p class="mb-0">Sebastián Lagos 2023. Todos los derechos reservados.</p>
+      <p class="mb-0">
+        Sebastián Lagos 2023 - CV inspirado en la gran <a class="nuria" href="https://www.nuriasatorres.com/" target="_blank">Nuria Torres</a> 
+      </p>
       <div>
-        <a href="https://twitter.com/develop_seba" target="_blank">Twitter</a>
-        <a href="https://www.instagram.com/sebacode83/">GitHub</a>
-        <a href="">Instagram</a>
+        <a
+          href="https://twitter.com/develop_seba"
+          target="_blank"
+          class="text-white text-decoration-none"
+          >Twitter</a
+        >
+        <span class="text-white mx-2">·</span>
+        <a
+          href="https://github.com/sebahernandez"
+          target="_blank"
+          class="text-white text-decoration-none"
+          >GitHub</a
+        >
+        <span class="text-white mx-2">·</span>
+        <a
+          href="https://www.instagram.com/sebacode83/"
+          target="_blank"
+          class="text-white text-decoration-none"
+          >Instagram</a
+        >
       </div>
     </footer>
 

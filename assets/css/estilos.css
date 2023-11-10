@@ -9,6 +9,10 @@ body {
   background-color: #F0F8F0;
 }
 
+main{
+  max-width: 1100px;
+}
+
 /* Colores */
 .lightred{
   color: var(--lightred);
@@ -35,9 +39,42 @@ body {
 
 .bg__form{
   background-color: #dbebdc;
+  padding: 30px;
+  margin: 100px 0px;
 }
 
 
-.francisco {
-  color: #ff4782;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.nuria{
+ color: var(--lightred);
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin-right: 0; /* Elimina el margen derecho en móviles */
+  }
+
+  .hero__title{
+    margin-top:40px;
+  }
 }
